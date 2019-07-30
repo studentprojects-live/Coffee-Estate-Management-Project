@@ -1,0 +1,409 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{834A2C76-822B-4E53-B2E9-2CAC50D08BC0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Estate_Management_Final.My.MyApplication</StartupObject>
+    <RootNamespace>Estate_Management_Final</RootNamespace>
+    <AssemblyName>Estate Management Final</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Estate Management Final.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Estate Management Final.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="cleaning.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cleaning.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1backup.Designer.vb">
+      <DependentUpon>Form1backup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form1backup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmassain.Designer.vb">
+      <DependentUpon>frmassain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmassain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmcleaning.Designer.vb">
+      <DependentUpon>frmcleaning.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmcleaning.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frminvest.Designer.vb">
+      <DependentUpon>frminvest.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frminvest.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmlogin.Designer.vb">
+      <DependentUpon>frmlogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmlogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmlogindetails.Designer.vb">
+      <DependentUpon>frmlogindetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmlogindetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmmaintain.Designer.vb">
+      <DependentUpon>frmmaintain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmmaintain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmmanure.Designer.vb">
+      <DependentUpon>frmmanure.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmmanure.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmmaster.Designer.vb">
+      <DependentUpon>frmmaster.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmmaster.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmpass.Designer.vb">
+      <DependentUpon>frmpass.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmpass.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmpayroll.Designer.vb">
+      <DependentUpon>frmpayroll.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmpayroll.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmproduction.Designer.vb">
+      <DependentUpon>frmproduction.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmproduction.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmsales.Designer.vb">
+      <DependentUpon>frmsales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmsales.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmstorage.Designer.vb">
+      <DependentUpon>frmstorage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmstorage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmtools.Designer.vb">
+      <DependentUpon>frmtools.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmtools.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmworkassign.Designer.vb">
+      <DependentUpon>frmworkassign.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmworkassign.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmworkerinfo.Designer.vb">
+      <DependentUpon>frmworkerinfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmworkerinfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmworkers.Designer.vb">
+      <DependentUpon>frmworkers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmworkers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMYEAR.Designer.vb">
+      <DependentUpon>FRMYEAR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRMYEAR.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="general.vb" />
+    <Compile Include="irrigation.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>irrigation.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="logindetails.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>logindetails.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="manure.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>manure.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="payroll.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>payroll.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="production.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>production.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="sales.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sales.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="workerInformation.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>workerInformation.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="workinvestments.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>workinvestments.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Wrkassignment.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Wrkassignment.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="cleaning.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cleaning.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1backup.resx">
+      <DependentUpon>Form1backup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmassain.resx">
+      <DependentUpon>frmassain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmcleaning.resx">
+      <DependentUpon>frmcleaning.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frminvest.resx">
+      <DependentUpon>frminvest.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmlogin.resx">
+      <DependentUpon>frmlogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmlogindetails.resx">
+      <DependentUpon>frmlogindetails.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmmaintain.resx">
+      <DependentUpon>frmmaintain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmmanure.resx">
+      <DependentUpon>frmmanure.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmmaster.resx">
+      <DependentUpon>frmmaster.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmpass.resx">
+      <DependentUpon>frmpass.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmpayroll.resx">
+      <DependentUpon>frmpayroll.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmproduction.resx">
+      <DependentUpon>frmproduction.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmsales.resx">
+      <DependentUpon>frmsales.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmstorage.resx">
+      <DependentUpon>frmstorage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmtools.resx">
+      <DependentUpon>frmtools.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmworkassign.resx">
+      <DependentUpon>frmworkassign.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmworkerinfo.resx">
+      <DependentUpon>frmworkerinfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmworkers.resx">
+      <DependentUpon>frmworkers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMYEAR.resx">
+      <DependentUpon>FRMYEAR.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="irrigation.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>irrigation.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="logindetails.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>logindetails.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="manure.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>manure.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="payroll.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>payroll.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="production.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>production.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sales.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>sales.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="workerInformation.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>workerInformation.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="workinvestments.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>workinvestments.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wrkassignment.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Wrkassignment.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="ADODB">
+      <Guid>{2A75196C-D9EB-4129-B803-931327F72D5C}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
